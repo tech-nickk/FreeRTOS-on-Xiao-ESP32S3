@@ -14,7 +14,7 @@ const char* password = "YOUR_WIFI_PASSWORD";
 const char* serverUrl = "http://your-api-endpoint.com/data";
 
 // DHT11 sensor configuration
-#define DHTPIN 4      // DHT11 data pin (GPIO4)
+#define DHTPIN D2      // DHT11 data pin (GPIO4)
 #define DHTTYPE DHT11 // DHT sensor type
 DHT dht(DHTPIN, DHTTYPE);
 
