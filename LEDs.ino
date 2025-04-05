@@ -2,8 +2,8 @@
 #include "freertos/task.h"
 
 // Define LED pins 
-#define LED1_PIN 2  // Built-in LED on ESP32-S3
-#define LED2_PIN 3  // Example external LED pin
+#define LED1_PIN D0  // Built-in LED on ESP32-S3
+#define LED2_PIN D2  // Example external LED pin
 
 // Task handles
 TaskHandle_t Task1Handle;
