@@ -14,8 +14,8 @@ const char* password = "YOUR_WIFI_PASSWORD";
 const char* serverUrl = "http://your-api-endpoint.com/data";
 
 // DHT11 sensor configuration
-#define DHTPIN D2      // DHT11 data pin (GPIO4)
-#define DHTTYPE DHT11 // DHT sensor type
+#define DHTPIN D2      // DHT22 data pin (GPIO4)
+#define DHTTYPE DHT22 // DHT sensor type
 DHT dht(DHTPIN, DHTTYPE);
 
 // Task handles
@@ -48,7 +48,7 @@ void dataCollectionTask(void *parameter) {
     // Create a reading structure
     SensorReading reading;
     
-    // Read temperature and humidity from DHT11
+    // Read temperature and humidity from DHT22
     reading.temperature = dht.readTemperature();
     reading.humidity = dht.readHumidity();
     reading.timestamp = millis();
